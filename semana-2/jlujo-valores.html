@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Control de Flujo y Manejo de Valores en JavaScript</h1>
+    <p>En JavaScript, las estructuras de control permiten dirigir el flujo de ejecución del programa basándose en condiciones lógicas. Las sentencias más comunes son if, else if y else, que permiten ejecutar bloques de código según se cumplan ciertas condiciones.</p>
+    <p>Condiciones Anidadas
+    Las condiciones anidadas son estructuras if dentro de otras estructuras if o else. Esto permite evaluar múltiples condiciones en secuencia.</p>
+    <p>javascript
+        Copiar código
+        let edad = null;
+        let nombre = "Carlos";
+        
+        if (edad !== null && edad !== undefined) {
+          console.log(`Tienes ${edad} años`);
+        } else {
+          if (nombre) {
+            console.log(`Bienvenido, ${nombre}`);
+          } else {
+            console.log("Información incompleta");
+          }
+        }</p>
+        <div>
+            <ul>
+                <li>Paso 1: Verificamos si edad tiene un valor válido./li>
+                <li>Paso 2: Si no, evaluamos si nombre está definido.</li>
+                <li>Paso 3: Dependiendo de las condiciones, mostramos el mensaje correspondiente.</li>
+            </ul>
+        </div>
+    <h2>Operadores Útiles para Evaluar Condiciones</h2>
+    <p>Además de las estructuras if, JavaScript ofrece operadores lógicos que ayudan a simplificar y evaluar condiciones de manera más eficiente.</p>
+    <p>Operador OR Lógico (||) Retorna el primer operando verdadero o el último operando si todos son falsos. Sin embargo, considera valores "falsy" como 0, '', false, null y undefined.</p>
+    <p>Operador Nullish Coalescing (??)
+    El operador Nullish Coalescing (??) retorna el operando de la derecha si el operando de la izquierda es null o undefined. A diferencia de ||, no considera otros valores "falsy" como 0 o ''.</p>
+    <p>javascript
+        Copiar código
+        resultado = a ?? b;</p>
+    <div>
+        <ul>
+            <li>Si a es diferente de null o undefined, resultado será a.</li>
+            <li>Si a es null o undefined, resultado será b.</li>
+        </ul>
+    </div>
+    <div>
+        <p>comparacion con el operador or</p>
+        <ul>
+            <li>Con ||: Retorna "Valor predeterminado" porque 0 es "falsy".</li>
+            <li>Con ??: Retorna 0 porque es un valor válido distinto de null o undefined</li>
+        </ul>
+    </div>
+    <div>
+        <h3>recursos complementarios en la pagina con los links</h3>
+    </div>
+    <h3>comparacion practiva video </h3>
+</body>
+</html>
